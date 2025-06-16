@@ -13,19 +13,29 @@ public class HelloController {
 
     @FXML
     private void blueClick() {
-        errorLabel.setVisible(false);
-        if (label.getTextFill().equals(Color.BLUE)) {
-            errorLabel.setVisible(true);
-        }
-        label.setTextFill(Color.BLUE);
+        changeLabelTextColor(Color.BLUE);
+    }
+
+    @FXML
+    private void redClick() {
+        changeLabelTextColor(Color.RED);
+    }
+
+    @FXML
+    private void purpleClick() {
+        changeLabelTextColor(Color.PURPLE);
     }
 
     @FXML
     private void greenClick() {
+        changeLabelTextColor(Color.GREEN);
+    }
+
+    private void changeLabelTextColor(Color color) {
         errorLabel.setVisible(false);
-        if (label.getTextFill().equals(Color.GREEN)) {
+        if (label.getTextFill().equals(color)) {
             errorLabel.setVisible(true);
         }
-        label.setTextFill(Color.GREEN);
+        label.setTextFill(color);
     }
 }

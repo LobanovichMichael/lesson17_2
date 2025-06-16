@@ -6,9 +6,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lesson17_2.HelloController">
    <children>
-      <Button layoutX="168.0" layoutY="243.0" mnemonicParsing="false" onAction="#blueClick" text="Синий" textFill="#1505ff" />
-      <Button layoutX="376.0" layoutY="243.0" mnemonicParsing="false" onAction="#greenClick" text="Зеленый" textFill="#05ff4c" />
+      <Button layoutX="142.0" layoutY="243.0" mnemonicParsing="false" onAction="#blueClick" prefWidth="100.0" text="Синий" textFill="#1505ff" />
+      <Button layoutX="358.0" layoutY="243.0" mnemonicParsing="false" onAction="#greenClick" prefWidth="100.0" text="Зеленый" textFill="#05ff4c" />
       <Label fx:id="label" layoutX="247.0" layoutY="113.0" text="Добро пожаловать" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="247.20000000000002" />
       <Label fx:id="errorLabel" layoutX="192.0" layoutY="296.0" text="Надпись уже окрашена в данный цвет!" textFill="RED" visible="false" />
+      <Button fx:id="redButton" layoutX="142.0" layoutY="314.0" mnemonicParsing="false" onAction="#redClick" prefWidth="100.0" text="Красный" textFill="RED" />
+      <Button fx:id="purpleButton" layoutX="358.0" layoutY="314.0" mnemonicParsing="false" onAction="#purpleClick" prefWidth="100.0" text="Фиолетовый" textFill="#ee00ff" />
    </children>
 </AnchorPane>
